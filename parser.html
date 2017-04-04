@@ -1,7 +1,7 @@
 <html lang="en-US">
     
     <head>
-		<title>Scan Parser</title>
+		<title>POS Parser</title>
 		
     	<!-- JQuery stuff -->
     	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
@@ -24,7 +24,12 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="jumbotron">
-						<h2>Scan Parser <small>Trying to make this shit easier.</small></h2>
+						<h2>POS Parser <small>Trying to make this shit easier.</small></h2>
+						How to use: <br>
+						- When on grid with a POS, change the D-Scan unit from AU to KM (by clicking on the letters). <br>
+						- Set distance to something short that won't pick up anything BUT the POS (200 KM should work). <br>
+						- Scan. <br>
+						- Click on the top result in the D-scan window, press CTRL+A, then CTRL+C. Open this window and paste into the box. Press "Parse" and you're done :D
 					</div>
 					<textarea id="scanned" class="form-control" rows="10" cols="50"></textarea><br>
                     <button id="parse" type="button" class="btn btn-warning btn-block">Parse!</button>
