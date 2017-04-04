@@ -12,6 +12,10 @@ function parse(text) {
 	condensed = {};
 	rows = text.split('\n');
 	
+	if (rows.length === 0) {
+		return "Empty!";
+	}
+	
 	for (var i = 0; i < rows.length; i++) {
 		var cells = rows[i].split('\t');
 		var index = cells.length - 2;
