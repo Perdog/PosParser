@@ -14,8 +14,10 @@ function parse(text) {
 	
 	for (var i = 0; i < rows.length; i++) {
 		var cells = rows[i].split('\t');
+		var index = cells.length - 2;
+		console.log(index);
 		
-		condensed[cells[1].toString()] = (condensed[cells[1].toString()]) ? condensed[cells[1].toString()] + 1 : 1;
+		condensed[cells[index].toString()] = (condensed[cells[index].toString()]) ? condensed[cells[index].toString()] + 1 : 1;
 	}
 	
 	var finalString = "";
