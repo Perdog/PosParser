@@ -2,7 +2,7 @@
 
 $('#parse').click(function() {
 	var parsed = parse($('#scanned').val())
-	$('#results').html(parsed);
+	$('#results').val(parsed);
 });
 
 var condensed = {};
